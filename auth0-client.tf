@@ -5,6 +5,7 @@ module "auth0_client" {
   application_name = each.value.name
 
   app_type                      = each.value.app_type
+  description = each.value.description
   cross_origin_auth             = each.value.cross_origin_auth
   custom_login_page_on          = each.value.custom_login_page_on
   custom_login_page             = each.value.custom_login_page
