@@ -47,6 +47,7 @@ variable "clients" {
 
     name                          = string
     app_type                      = string
+    description            = optional(string, null)
     cross_origin_auth             = optional(bool, false)
     allowed_logout_urls           = optional(list(string), [])
     allowed_origins               = optional(list(string), [])
