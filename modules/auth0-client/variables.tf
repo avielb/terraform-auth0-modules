@@ -4,6 +4,12 @@ variable "application_name" {
   default     = "Auth0"
 }
 
+variable "description" {
+  description = "Auth0 Application description."
+  type        = string
+  default     = "Auth0"
+}
+
 variable "app_type" {
   description = "Auth0 Application App-type."
   type        = string

@@ -1,6 +1,6 @@
 resource "auth0_client" "my_client" {
   name = var.application_name
-  # description                         = var.description
+  description                         = var.description
   app_type                            = var.app_type
   custom_login_page_on                = var.custom_login_page_on
   custom_login_page                   = var.custom_login_page

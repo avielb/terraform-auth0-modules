@@ -47,6 +47,7 @@ variable "clients" {
 
     name                          = string
     app_type                      = string
+    client_metadata               = optional(map(string), {})
     description            = optional(string, null)
     cross_origin_auth             = optional(bool, false)
     allowed_logout_urls           = optional(list(string), [])
@@ -57,6 +58,10 @@ variable "clients" {
     organization_require_behavior = optional(string, null)
     custom_login_page_on          = optional(bool, false)
     custom_login_page             = optional(string, " ")
+    is_first_party = optional(bool, false)
+    is_trusted_endpoint = optional(bool, false)
+    oidc_conformant = optional(bool, false)
+    sso_disabled = optional(bool, false)
     token_endpoint_auth_method    = optional(string, "none")
     grant_types                   = optional(list(string), ["client_credentials"])
     token_endpoint_auth_method    = optional(string, "client_secret_post")

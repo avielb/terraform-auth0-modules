@@ -21,4 +21,8 @@ module "auth0_client" {
   sso                           = each.value.sso
   organization_require_behavior = each.value.organization_require_behavior
   client_metadata               = each.value.client_metadata
+  is_first_party = each.value.is_first_party
+  is_trusted_endpoint = each.value.is_trusted_endpoint
+  oidc_conformant = each.value.oidc_conformant
+  sso_disabled = each.value.sso_disabled
 }
